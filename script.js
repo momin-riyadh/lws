@@ -4,17 +4,17 @@ const incrementEL = document.getElementById('increment');
 const decrementEL = document.getElementById('decrement');
 
 //Action Creators
-const increment = () => {
+const increment = (value) => {
     return {
         type: 'INCREMENT',
-        payload: 5
+        payload: value
     }
 }
 
-const decrement = () => {
+const decrement = (value) => {
     return {
         type: 'DECREMENT',
-        payload: 2
+        payload: value
     }
 }
 
@@ -59,9 +59,9 @@ store.subscribe(render);
 
 //Event Lisntener
 incrementEL.addEventListener('click', () => {
-    store.dispatch(increment())
+    store.dispatch(increment(100))
 })
 
 decrementEL.addEventListener('click', () => {
-    store.dispatch(decrement())
+    store.dispatch(decrement(50))
 })
