@@ -39,11 +39,13 @@ function scoreReducer(state = initialState, action) {
             totalValue: state.totalValue + action.payload,
         }
     } else if (action.type === 'decrement') {
+        const updatedTotal = state.totalValue - action.payload;
+        const newTotal = updatedTotal < 0 ? 0 : updatedTotal;
         return {
             ...state,
-            totalValue: state.totalValue - action.payload,
-        }
-    } else if (action.type === 'resetValue') {
+            totalValue: newTotal,
+        };
+    } else if (action.type === 'reset') {
         return {...initialState, totalValue: 0}
     } else {
         return state;
