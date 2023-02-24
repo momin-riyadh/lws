@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b73440e3-9c27-4c8d-ad10-c33790e5beac" name="Changes" comment="" />
+    <list default="true" id="b73440e3-9c27-4c8d-ad10-c33790e5beac" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/HooksCounter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/counter/counterReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/counter/counterReducer.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,7 +96,7 @@
       <workItem from="1677162136961" duration="12221000" />
       <workItem from="1677208975368" duration="8388000" />
       <workItem from="1677239223995" duration="1697000" />
-      <workItem from="1677246167334" duration="6902000" />
+      <workItem from="1677246167334" duration="8151000" />
     </task>
     <servers />
   </component>
