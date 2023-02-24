@@ -40,7 +40,7 @@ function scoreReducer(state = initialState, action) {
         }
     } else if (action.type === 'decrement') {
         const updatedTotal = state.totalValue - action.payload;
-        const newTotal = updatedTotal < 0 ? 0 : updatedTotal;
+        const newTotal = updatedTotal < 0 ? 0 : updatedTotal;  // Validation for negative value
         return {
             ...state,
             totalValue: newTotal,
