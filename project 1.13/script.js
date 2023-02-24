@@ -6,23 +6,29 @@ const resetEL = document.querySelector('.lws-reset');
 const addrowEL = document.querySelector(".lws-addMatch");
 const allMatchesContainer = document.querySelector('.all-matches');
 
+//Action Identifiers
+
+const INCREMENT = 'increment';
+const DECREMENT = 'decrement';
+const RESET = 'reset';
+
 //Action Creators
 const increment = (value) => {
     return {
-        type: 'increment',
+        type: INCREMENT,
         payload: value
     }
 }
 
 const decrement = (value) => {
     return {
-        type: 'decrement',
+        type: DECREMENT,
         payload: value
     }
 }
 
 const resetValue = () => {
-    return {type: 'reset'}
+    return {type: RESET}
 }
 
 //Initial State
@@ -35,19 +41,19 @@ const initialState = {
 
 // Create Reducer Function
 function scoreReducer(state = initialState, action) {
-    if (action.type === 'increment') {
+    if (action.type === INCREMENT) {
         return {
             ...state,
             totalValue: state.totalValue + action.payload,
         }
-    } else if (action.type === 'decrement') {
+    } else if (action.type === DECREMENT) {
         const updatedTotal = state.totalValue - action.payload;
         const newTotal = updatedTotal < 0 ? 0 : updatedTotal;  // Validation for negative value
         return {
             ...state,
             totalValue: newTotal,
         };
-    } else if (action.type === 'reset') {
+    } else if (action.type === RESET) {
         return {...initialState, totalValue: 0}
     } else {
         return state;
@@ -120,7 +126,7 @@ addrowEL.addEventListener('click', function () {
       </form>
     </div>
     <div class="numbers">
-      <h2 class="lws-singleResult"></h2>
+      <h2 class="lws-singleResult">0</h2>
     </div>
   `;
     allMatchesContainer.appendChild(newMatchDiv);
