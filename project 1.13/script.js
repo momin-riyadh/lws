@@ -1,8 +1,11 @@
 //Select DOM Element
-const counterEL = document.querySelector('.lws-singleResult');
+const counterEL = document.querySelectorAll('.lws-singleResult');
 const incrementEL = document.querySelector('.lws-increment');
 const decrementEL = document.querySelector('.lws-decrement');
 const resetEL = document.querySelector('.lws-reset');
+const containerEL = document.querySelector(".match");
+const addrowEL = document.querySelector(".lws-addMatch");
+const allMatchesContainer = document.querySelector('.all-matches');
 
 //Action Creators
 const increment = (value) => {
@@ -57,7 +60,10 @@ function scoreReducer(state = initialState, action) {
 const store = Redux.createStore(scoreReducer);
 const render = () => {
     const state = store.getState();
-    counterEL.textContent = state.totalValue;
+    for (singleCounter of counterEL) {
+        singleCounter.textContent = state.totalValue;
+    }
+
 }
 
 //Update UI Initially
@@ -65,7 +71,6 @@ render();
 store.subscribe(render);
 
 //Event Listener
-
 incrementEL.addEventListener('keypress', (e) => {
     if (e.key === "Enter") {
         const value = Number(incrementEL.value);
@@ -85,3 +90,39 @@ resetEL.addEventListener('click', () => {
     decrementEL.value = '';
     counterEL.textContent = 0;
 });
+
+addrowEL.addEventListener('click', function () {
+    const newMatchDiv = document.createElement('div');
+    newMatchDiv.classList.add('match');
+
+    newMatchDiv.innerHTML = `
+    <div class="wrapper">
+      <button class="lws-delete">
+        <img src="./image/delete.svg" alt=""/>
+      </button>
+      <h3 class="lws-matchName">Match ${allMatchesContainer.children.length + 1}</h3>
+    </div>
+    <div class="inc-dec">
+      <form class="incrementForm" onsubmit="return false">
+        <h4>Increment</h4>
+        <input
+          type="number"
+          name="increment"
+          class="lws-increment"
+        />
+      </form>
+      <form class="decrementForm" onsubmit="return false">
+        <h4>Decrement</h4>
+        <input
+          type="number"
+          name="decrement"
+          class="lws-decrement"
+        />
+      </form>
+    </div>
+    <div class="numbers">
+      <h2 class="lws-singleResult"></h2>
+    </div>
+  `;
+    allMatchesContainer.appendChild(newMatchDiv);
+})
