@@ -3,7 +3,6 @@ const counterEL = document.querySelectorAll('.lws-singleResult');
 const incrementEL = document.querySelector('.lws-increment');
 const decrementEL = document.querySelector('.lws-decrement');
 const resetEL = document.querySelector('.lws-reset');
-const containerEL = document.querySelector(".match");
 const addrowEL = document.querySelector(".lws-addMatch");
 const allMatchesContainer = document.querySelector('.all-matches');
 
