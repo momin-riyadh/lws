@@ -1,11 +1,11 @@
-import {DINCREMENET, DDECREMENT} from "./actionTypes";
+import {DINCREMENT, DDECREMENT} from "./actionTypes";
 
 const initialState = {
     value: 0,
 }
 const dynamicCounterReducer = (state = initialState, action) => {
     switch (action.type) {
-        case DINCREMENET:
+        case DINCREMENT:
             return {
                 ...state,
                 value: state.value + action.payload,

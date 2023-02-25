@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b73440e3-9c27-4c8d-ad10-c33790e5beac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/redux/dynamicCounter/actionTypes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/dynamicCounter/actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/dynamicCounter/dynamicCounterReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/DynamicHooksCounter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/rootReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/HooksCounter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HooksCounter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/dynamicCounter/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/dynamicCounter/actionTypes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/dynamicCounter/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/dynamicCounter/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/dynamicCounter/dynamicCounterReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/dynamicCounter/dynamicCounterReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +111,7 @@
       <workItem from="1677239223995" duration="1697000" />
       <workItem from="1677246167334" duration="10253000" />
       <workItem from="1677295411475" duration="1577000" />
-      <workItem from="1677322409354" duration="614000" />
+      <workItem from="1677322409354" duration="2533000" />
     </task>
     <servers />
   </component>
