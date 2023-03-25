@@ -2,6 +2,7 @@ import React from 'react';
 import Search from "./Search";
 import logoImage from "../../assets/lws.svg";
 import searchImage from "../../assets/search.svg";
+import {Link} from "react-router-dom";
 
 function Navbar(props) {
     return (
@@ -9,13 +10,13 @@ function Navbar(props) {
             <div
                 className="max-w-7xl mx-auto px-5 lg:px-0 flex justify-between py-3"
             >
-                <a href="/">
+                <Link to="/">
                     <img
                         className="h-10"
                         src={logoImage}
                         alt="Learn with Sumit"
                     />
-                </a>
+                </Link>
                 <div
                     className="border border-slate-200 flex items-center bg-white h-10 px-5 rounded-lg text-sm ring-emerald-200"
                 >

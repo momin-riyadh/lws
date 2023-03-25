@@ -8,11 +8,11 @@ import Footer from "../components/Footer";
 function Home(props) {
     return (
         <>
-            <Navbar/>
+
             <Tags/>
             <VideoGrid/>
             <Pagination/>
-            <Footer/>
+
         </>
     );
 }
