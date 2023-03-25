@@ -1,4 +1,6 @@
 import React from 'react';
+import likeImage from "../../assets/like.svg"
+import unlikeImage from "../../assets/unlike.svg"
 
 function LikeUnlike(props) {
     return (
@@ -7,7 +9,7 @@ function LikeUnlike(props) {
                 <div className="shrink-0">
                     <img
                         className="w-5 block"
-                        src="./assets/like.svg"
+                        src={likeImage}
                         alt="Like"
                     />
                 </div>
@@ -21,7 +23,7 @@ function LikeUnlike(props) {
                 <div className="shrink-0">
                     <img
                         className="w-5 block"
-                        src="./assets/unlike.svg"
+                        src={unlikeImage}
                         alt="Unlike"
                     />
                 </div>

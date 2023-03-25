@@ -18,7 +18,7 @@ function VideoDescription(props) {
                     Uploaded on 23 Nov 2022
                 </h2>
 
-                <!-- like/unlike -->
+
                 <LikeUnlike/>
             </div>
 
