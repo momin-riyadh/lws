@@ -1,5 +1,7 @@
 import React from 'react';
 import Search from "./Search";
+import logoImage from "../../assets/lws.svg";
+import searchImage from "../../assets/search.svg";
 
 function Navbar(props) {
     return (
@@ -10,18 +12,18 @@ function Navbar(props) {
                 <a href="/">
                     <img
                         className="h-10"
-                        src="./assets/lws.svg"
+                        src={logoImage}
                         alt="Learn with Sumit"
                     />
                 </a>
                 <div
                     className="border border-slate-200 flex items-center bg-white h-10 px-5 rounded-lg text-sm ring-emerald-200"
                 >
-                    <!-- search -->
+
                   <Search/>
                     <img
                         className="inline h-4 cursor-pointer"
-                        src="./assets/search.svg"
+                        src={searchImage}
                         alt="Search"
                     />
                 </div>
