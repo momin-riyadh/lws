@@ -8,10 +8,6 @@ A
 public/index.html,f\4\f43ecdf8d666ee908aacce037b4cd72159e4741b
 O
 src/components/navbar/Search.js,9\6\96d69ec24797572bafdb3fb6ae5908c7db32648d
-K
-src/components/tags/Tags.js,3\1\315de11d9dfb023322956dfa2546230d54d77312
-J
-src/components/tags/Tag.js,0\5\05d09bbce5a0a79da70f00342cb6b9223a98a38b
 O
 src/components/ui/Pagination.js,5\d\5dfce98fb52c8c1eb35628fcc3f1990aab081495
 H
