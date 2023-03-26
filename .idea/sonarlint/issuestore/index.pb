@@ -20,8 +20,6 @@ H
 src/components/Footer.js,b\d\bd22e369de6b4e7c909c8598869bb4c2e3bc1508
 H
 html_template/index.html,4\2\4220ac8c1d851546aa768bb2095c27f7a8825a28
-P
- src/components/grid/VideoGrid.js,8\d\8d4e8295589761796f0ea5ace7be7b7b777db34b
 <
 src/index.js,f\9\f900edc44cb929c2267a16100a32851f6d5b477d
 X
