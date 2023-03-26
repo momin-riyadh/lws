@@ -2,8 +2,6 @@
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
-E
-server/db_videos.json,e\f\ef4a112671e081729f6b298dad64ab10d951d1e1
 O
 src/components/navbar/Search.js,9\6\96d69ec24797572bafdb3fb6ae5908c7db32648d
 A

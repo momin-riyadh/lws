@@ -2,8 +2,6 @@
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
-E
-server/db_videos.json,e\f\ef4a112671e081729f6b298dad64ab10d951d1e1
 H
 html_template/index.html,4\2\4220ac8c1d851546aa768bb2095c27f7a8825a28
 A
