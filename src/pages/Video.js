@@ -10,15 +10,15 @@ import {useParams} from "react-router-dom";
 import Loading from "../components/ui/Loading";
 
 function Video(props) {
-    const {video, isLoading, isError,} = useSelector(state => state.video)
+    const {video, isLoading, isError, error} = useSelector(state => state.video)
     const dispatch = useDispatch();
-    const {videoId} = useParams();
+    const { videoId } = useParams();
 
     useEffect(() => {
         dispatch(fetchVideo(videoId));
     }, [dispatch, videoId]);
 
-    const {link, title} = video || {};
+    const {id, link, title, tags} = video || {};
 
     //Decide What to Render
     let content = null;
@@ -37,7 +37,7 @@ function Video(props) {
 
                 </div>
 
-                <RelatedVideoList/>
+                <RelatedVideoList currentVideoId={id} tags={tags}/>
             </div>
         )
     }
